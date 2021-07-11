@@ -13,11 +13,11 @@ router.get('/', (req, res, next) => {
 });
 
 
-router.post('/main', upload.none(), async (req, res) => {
+router.post('/main', upload.none(),  (req, res) => {
     console.log(req.body)
   
-  const { body } = res;
-
+  const { body } = req;
+  
   const validate = ajv.compile(validation.schema);
   const valid = validate(body);
 
@@ -29,9 +29,8 @@ router.post('/main', upload.none(), async (req, res) => {
       }
     });
    //return; 
-  }  else if (valid) { res.json({status:  'ok'})};
-
-
+  }  else if (valid) { res.json({status:  'ok'}); 
+}
 
 });
 
