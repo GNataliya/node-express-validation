@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <link rel="stylesheet" href="http://localhost:8000/stylesheets/style.css">
+</head>
+<body>
+ 
+  <form name="setInfo" method="POST">
+    <input  placeholder="id" name="clientId">
+    <input  placeholder="first name" name="firstName">
+    <input  placeholder="last name" name="lastName">
+    <input  placeholder="email" name="email">
+    <input  placeholder="gender: male\female\alien" name="gender">
+    <input  placeholder="ip address" name="ipAddress">
+
+    <button type="submit">push</button>
+  </form>
+  <div class="clientResult"></div>
+
+    <script src="/javascripts/mainClient.js"></script>
+</body>
+</html>
