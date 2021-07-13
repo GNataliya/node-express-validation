@@ -39,6 +39,3 @@ const schema = {
     schema
   };
 
-
-// email - имейл
-// ip_address - айпи адрес через точку
